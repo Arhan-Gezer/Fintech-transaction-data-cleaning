@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-# CSV dosyasını oku
+# Read csv
 df = pd.read_csv("transactions_raw.csv")
 
 
@@ -53,4 +53,5 @@ for col in df.select_dtypes(include="object").columns:
 
 df_clean = pd.read_csv("transactions_clean.csv")
 missing_data_summary(df_clean)
+
 
